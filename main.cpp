@@ -68,33 +68,41 @@ int main(int argc, char **argv) {
     switch (filterI) {
         case 0:
             convolution_filter(image, blur);
+            imshow("Blur", image);
             break;
         case 1:
             convolution_filter(image, bottom_sobel);
+            imshow("Bottom Sobel", image);
             break;
         case 2:
             convolution_filter(image, emboss);
+            imshow("Emboss", image);
             break;
         case 3:
             convolution_filter(image, identity);
+            imshow("Identity", image);
             break;
         case 4:
             convolution_filter(image, left_sobel);
+            imshow("Left Sobel", image);
             break;
         case 5:
             convolution_filter(image, outline);
+            imshow("Outline", image);
             break;
         case 6:
             convolution_filter(image, right_sobel);
+            imshow("Right Sobel", image);
             break;
         case 7:
             convolution_filter(image, sharpen);
+            imshow("Sharpen", image);
             break;
         case 8:
             convolution_filter(image, top_sobel);
+            imshow("Top Sobel", image);
             break;
     }
-    imshow("Output", image);
     waitKey(0);
 
 }
